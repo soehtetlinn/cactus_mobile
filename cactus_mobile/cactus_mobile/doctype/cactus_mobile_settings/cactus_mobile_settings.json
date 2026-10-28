@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "creation": "2026-10-28 21:32:46.038158",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "max_gps_accuracy",
+  "column_break_app",
+  "min_app_version"
+ ],
+ "fields": [
+  {
+   "default": "1",
+   "description": "When off, employees cannot sign in to the Cactus Employee app.",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enable mobile app"
+  },
+  {
+   "default": "100",
+   "description": "Check-ins are refused when the phone reports a less accurate location. 0 means no limit. The office radius itself is set with a Shift Location on the employee's Shift Assignment.",
+   "fieldname": "max_gps_accuracy",
+   "fieldtype": "Int",
+   "label": "Maximum GPS accuracy (metres)"
+  },
+  {
+   "fieldname": "column_break_app",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "Older versions of the app ask the employee to update. Leave empty to allow any version.",
+   "fieldname": "min_app_version",
+   "fieldtype": "Data",
+   "label": "Minimum app version"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-10-28 21:32:46.038158",
+ "modified_by": "Administrator",
+ "module": "Cactus Mobile",
+ "name": "Cactus Mobile Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
